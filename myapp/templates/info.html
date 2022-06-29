@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UserInfor</title>
+    <style>
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+<h1>UserInfor</h1>
+<a href="/info/add">
+    <button> 新增</button>
+</a>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>用户名</th>
+        <th>密码</th>
+        <th>年龄</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in data_list %}
+        <tr>
+            <td>{{ obj.id }}</td>
+            <td>{{ obj.name }}</td>
+            <td>{{ obj.password }}</td>
+            <td>{{ obj.age }}</td>
+            <td>
+            <a href="/info/edit?id={{ obj.id }}">编辑</a>
+            <a href="/info/delete?id={{ obj.id }}">删除</a>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info页面</title>
+</head>
+<body>
+这个地方是info页面！
+name为{{ name }}
+{#条件语法#}
+{% if name.0 == '张三' %}
+    <span>you</span>
+{% else %}
+    <span>没这个人</span>
+{% endif %}
+
+{#遍历role#}
+<div>
+    {% for item in role %}
+        <div>
+            {{ item }}
+        </div>
+    {% endfor %}
+</div>
+<br>
+<div>
+    {#遍历person#}
+    {% for k,v in person.items %}
+        <div>
+            <li>
+                {{ k }} : {{ v }}
+            </li>
+        </div>
+    {% endfor %}
+</div>
+<br>
+<img src="{% static 'header.jpeg' %}" alt="image">
+</body>
+</html>
