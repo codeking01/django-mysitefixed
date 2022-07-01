@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 # 编写视图函数
-from myapp.models import UserInfo
+from myapp.models import UserInfo, Department
 
 
 def index(request):
@@ -34,45 +34,68 @@ def news(request):
     return render(request, "news.html", {'res': res})
 
 
-def info(request):
+def department_list(request):
     # 获取数据库的内容
-    data_list = UserInfo.objects.all()
-    return render(request, "info.html", {'data_list': data_list})
+    Department_list = Department.objects.all()
+    return render(request, "depart_list.html", {'Department_list': Department_list})
 
 
-def addinfo(request):
+def add_department(request):
     if request.method == 'GET':
-        return render(request, "addinfo.html")
+        return render(request, "add_department.html")
     # 获取表单的数据
-    name = request.POST.get('name')
-    password = request.POST.get('password')
-    age = request.POST.get('age')
-
+    title = request.POST.get('department_title')
     # 添加数据库的内容
-    UserInfo.objects.create(name=name, password=password, age=age)
-    return redirect("/info/")
+    Department.objects.create(title=title)
+    return redirect("/department_list/")
 
 
-def delinfo(request):
+def del_department_list(request):
     # 获取请求的参数
-    Id = request.GET.get('id')
+    Department_id = request.GET.get('nid')
     # 删除数据库的内容
-    UserInfo.objects.filter(id=Id).delete()
-    return redirect("/info/")
+    Department.objects.filter(id=Department_id).delete()
+    return redirect("/department_list/")
 
 
-def editinfo(request):
+def edit_department(request, nid):
     if request.method == 'GET':
         # 获取请求的参数
-        Id = request.GET.get('id')
-        # 获取数据库的内容
-        data_list = UserInfo.objects.filter(id=Id).first()
+        data_list = Department.objects.filter(id=nid).first()
         return render(request, "editinfo.html", {'data_list': data_list})
+    department_title = request.POST.get('department_title')
     # 修改数据
-    print(request.POST)
-    id = request.POST.get('id')
-    name = request.POST.get('name')
+    Department.objects.filter(id=nid).update(title=department_title)
+    return redirect("/department_list/")
+
+
+def user_list(request):
+    # 获取数据库的内容
+    UserInfo_list = UserInfo.objects.all()
+    # 获取gender
+    # UserInfo_list[0].get_gender_display()
+    # 获取表关联的内容
+    #  UserInfo_list[0].department_id    # 这个是直接获取内容
+    # UserInfo_list[0].department.title  # 先获取对象在获取属性
+    return render(request, "user_list.html", {'UserInfo_list': UserInfo_list})
+
+
+def add_user(request):
+    if request.method == 'GET':
+        context = {
+            'gender_choices': UserInfo.gender_choices,
+            'department_list': Department.objects.all()
+        }
+        return render(request, "add_user.html", context)
+    # 获取表单的数据
+    username = request.POST.get('username')
     password = request.POST.get('password')
-    age = request.POST.get('age')
-    UserInfo.objects.filter(id=id).update(name=name, password=password, age=age)
-    return redirect("/info/")
+    age = request.POST.get('user_age')
+    user_account = request.POST.get('user_account')
+    user_gender = request.POST.get('user_gender')
+    department_id = request.POST.get('department_id')
+    create_time = request.POST.get('create_time')
+    # 添加到数据库中
+    UserInfo.objects.create(name=username, password=password, age=age, account=user_account,
+                            gender=user_gender, department_id=department_id, create_time=create_time)
+    return redirect('/user_list/')

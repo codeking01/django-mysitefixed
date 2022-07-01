@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% block title %}edit_info{% endblock %}
+{% block content %}
+    <a class="btn btn-primary" href="/department_list/add/">
+        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>新增部门
+    </a>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span> 部门信息
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>名称</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for item in Department_list %}
+                    <tr>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.title }}</td>
+                        <td>
+                            <a class="btn btn-primary" href="/department_list/{{ item.id }}/edit/">编辑</a>
+                            <a class="btn btn-danger" href="/department_list/delete?nid={{ item.id }}">删除</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+{% endblock %}

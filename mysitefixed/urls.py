@@ -30,14 +30,19 @@ urlpatterns = [
     path('news/', views.news),
 
     # 根据数据库的操作info页面
-    path('info/', views.info),
+    path('department_list/', views.department_list),
 
     # info的添加
-    path('info/add/', views.addinfo),
+    path('department_list/add/', views.add_department),
 
     # info的删除
-    path('info/delete', views.delinfo),
+    path('department_list/delete/', views.del_department_list),
 
     # info的修改
-    path('info/edit/', views.editinfo),
+    path('department_list/<int:nid>/edit/', views.edit_department),
+
+    # 用户的路由
+    path('user_list/', views.user_list),
+
+    path('user_list/add/', views.add_user),
 ]
