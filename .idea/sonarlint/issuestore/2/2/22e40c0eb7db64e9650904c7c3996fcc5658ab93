@@ -1,0 +1,222 @@
+
+sjavascript:S3776("WRefactor this function to reduce its Cognitive Complexity from 24731 to the 15 allowed.(Çà§„
+<javascript:S1186Õ"Unexpected empty method 'noop'.(Î¯›·
+Tjavascript:S1854ï"2Remove this useless assignment to variable "name".(ÅàÉ¿ıÿÿÿÿ
+Ojavascript:S1117‘"-'arr' is already declared in the upper scope.(áŸ½¾şÿÿÿÿ
+Ojavascript:S1117¢"-'arr' is already declared in the upper scope.(éÁÔêùÿÿÿÿ
+Mjavascript:S1117–"0'window' is already declared in the upper scope.(±°İ¢
+Sjavascript:S1117˜"1'support' is already declared in the upper scope.(Øä»Œøÿÿÿÿ
+Ojavascript:S1117¥"2'document' is already declared in the upper scope.(×ªÔ
+Rjavascript:S1117¾"0'hasOwn' is already declared in the upper scope.(µÙûÿÿÿÿ
+Ojavascript:S1117¿"-'arr' is already declared in the upper scope.(‚ÿÎúùÿÿÿÿ
+Pjavascript:S1117Â".'push' is already declared in the upper scope.(Í–‘úÿÿÿÿ
+Qjavascript:S1117Ã"/'slice' is already declared in the upper scope.(¾±©Ùøÿÿÿÿ
+Njavascript:S1117Ç"1'indexOf' is already declared in the upper scope.(‡¼¯à
+Hjavascript:S1117È"+'i' is already declared in the upper scope.(Æïşº
+Jjavascript:S1117ø"/'rtrim' is already declared in the upper scope.(´ÏX
+ojavascript:S5850ø"TGroup parts of the regex together to make the intended operator precedence explicit.(´ÏX
+vjavascript:S5850"TGroup parts of the regex together to make the intended operator precedence explicit.(˜åÁÑùÿÿÿÿ
+Qjavascript:S1117•"/'rhtml' is already declared in the upper scope.(†®šÒşÿÿÿÿ
+Vjavascript:S1117œ"4'rquickExpr' is already declared in the upper scope.(õ¢øµıÿÿÿÿ
+`javascript:S3358¯"DExtract this nested ternary operation into an independent statement.(’Ÿ£X
+Ajavascript:S6324¶"$Remove this control character: \x1f.(´‡¨
+Ajavascript:S6324¶"$Remove this control character: \x1f.(´‡¨
+Wjavascript:S1121Ú"5Extract the assignment of "arr" from this expression.(Ì¯—şÿÿÿÿ
+gjavascript:S905á"FExpected an assignment or function call and instead saw an expression.(§—Áíúÿÿÿÿ
+Hjavascript:S1117î"+'i' is already declared in the upper scope.(Ş¼Ş¢
+1javascript:S108ñ"Empty block statement.(ô÷‹`
+Rjavascript:S1117÷"0'Sizzle' is already declared in the upper scope.(âôîáûÿÿÿÿ
+Hjavascript:S1117ø"+'i' is already declared in the upper scope.(“ĞÖˆ
+Ujavascript:S1121“"3Extract the assignment of "m" from this expression.(›»Ö¤úÿÿÿÿ
+Xjavascript:S1121—"6Extract the assignment of "elem" from this expression.(™¢æùÿÿÿÿ
+Vjavascript:S1135š"4Complete the task associated to this "TODO" comment.(ĞÉ©Íøÿÿÿÿ
+Vjavascript:S1135¨"4Complete the task associated to this "TODO" comment.(ĞÉ©Íøÿÿÿÿ
+Pjavascript:S1121¹"3Extract the assignment of "m" from this expression.(¨ô”ñ
+Wjavascript:S1121à"5Extract the assignment of "nid" from this expression.(ñÌÿşÿÿÿÿ
+Wjavascript:S1121ã"5Extract the assignment of "nid" from this expression.(Ğ°–øÿÿÿÿ
+ajavascript:S1121–"DExtract the assignment of "cache[ key + " " ]" from this expression.(ÃÓ¦Ç
+Rjavascript:S1854·"0Remove this useless assignment to variable "el".(Ë©ëåûÿÿÿÿ
+Rjavascript:S1854·"0Remove this useless assignment to variable "el".(Ë©ëåûÿÿÿÿ
+Ojavascript:S1117Á"-'arr' is already declared in the upper scope.(¢ÄùØúÿÿÿÿ
+Gjavascript:S1117Â"+'i' is already declared in the upper scope.(·ªŠd
+Sjavascript:S1117º"1'matches' is already declared in the upper scope.(Ã¤ĞÀùÿÿÿÿ
+Hjavascript:S1117½"+'i' is already declared in the upper scope.(¦îÎ‹
+Pjavascript:S1121Á"3Extract the assignment of "j" from this expression.(…ìø 
+[javascript:S1121Â">Extract the assignment of "matches[ j ]" from this expression.(Âß÷
+Sjavascript:S1117Ü"1'docElem' is already declared in the upper scope.(Ûÿùııÿÿÿÿ
+Pjavascript:S1117Ë	".'node' is already declared in the upper scope.(…µÒıùÿÿÿÿ
+Kjavascript:S1117Õ	".'node' is already declared in the upper scope.(ßÇÇ‡
+Hjavascript:S1117Õ	"+'i' is already declared in the upper scope.(ßÇÇ‡
+Mjavascript:S1117ÿ	"+'i' is already declared in the upper scope.(ÈÖ§ıÿÿÿÿ
+_javascript:S1121§
+"=Extract the assignment of "support.qsa" from this expression.(ï«şÁúÿÿÿÿ
+fjavascript:S1121"IExtract the assignment of "support.matchesSelector" from this expression.(ê“Ÿ‡
+Vjavascript:S1121"9Extract the assignment of "matches" from this expression.(ê“Ÿ‡
+Mjavascript:S1117ˆ"+'i' is already declared in the upper scope.(ÈÖ§ıÿÿÿÿ
+`javascript:S3358–"DExtract this nested ternary operation into an independent statement.(­ƒm
+ajavascript:S3358˜"DExtract this nested ternary operation into an independent statement.(ÚœŒò
+fjavascript:S3358™"DExtract this nested ternary operation into an independent statement.(³ÜµĞúÿÿÿÿ
+ajavascript:S3358š"DExtract this nested ternary operation into an independent statement.(è×Õ
+fjavascript:S3358¼"DExtract this nested ternary operation into an independent statement.(òÖú®şÿÿÿÿ
+ajavascript:S3358½"DExtract this nested ternary operation into an independent statement.(•”Áú
+fjavascript:S3358…"DExtract this nested ternary operation into an independent statement.(é³üËÿÿÿÿÿ
+fjavascript:S3358‡"DExtract this nested ternary operation into an independent statement.(ú‹¯…ıÿÿÿÿ
+Wjavascript:S1121‡"5Extract the assignment of "val" from this expression.(ú‹¯…ıÿÿÿÿ
+Hjavascript:S1117œ"+'i' is already declared in the upper scope.(Ş¼Ş¢
+Mjavascript:S1117¼"+'i' is already declared in the upper scope.(ÈÖ§ıÿÿÿÿ
+Tjavascript:S1117Æ"2'nodeName' is already declared in the upper scope.(¥”Çµşÿÿÿÿ
+[javascript:S1121Ô"9Extract the assignment of "pattern" from this expression.(¹’¾ıÿÿÿÿ
+fjavascript:S3358ğ"DExtract this nested ternary operation into an independent statement.(¹šıêıÿÿÿÿ
+ajavascript:S3358ñ"DExtract this nested ternary operation into an independent statement.(º¬ Ò
+`javascript:S3358ò"DExtract this nested ternary operation into an independent statement.(®·èY
+ajavascript:S3358ó"DExtract this nested ternary operation into an independent statement.(Ó¾óÃ
+fjavascript:S3358ô"DExtract this nested ternary operation into an independent statement.(§œäÿúÿÿÿÿ
+ajavascript:S3358õ"DExtract this nested ternary operation into an independent statement.(Şø­¨
+Jjavascript:S1117Š"-'dir' is already declared in the upper scope.(‡³Øç
+Ojavascript:S1854·"2Remove this useless assignment to variable "diff".(²œş³
+Yjavascript:S1854º"7Remove this useless assignment to variable "nodeIndex".(«Ë†ûÿÿÿÿ
+Yjavascript:S1854Ş"7Remove this useless assignment to variable "nodeIndex".(«Ë†ûÿÿÿÿ
+Sjavascript:S1117—"1'matches' is already declared in the upper scope.(å„ •ûÿÿÿÿ
+Mjavascript:S1117š"+'i' is already declared in the upper scope.(óÕ„–ùÿÿÿÿ
+]javascript:S1121"@Extract the assignment of "matches[ idx ]" from this expression.(àº…€
+Sjavascript:S1117¶"1'matches' is already declared in the upper scope.(¬§»æûÿÿÿÿ
+Mjavascript:S1117¹"+'i' is already declared in the upper scope.(ıÉÊ–ÿÿÿÿÿ
+Xjavascript:S1121½"6Extract the assignment of "elem" from this expression.(ÛÌñ‡şÿÿÿÿ
+[javascript:S1121¾">Extract the assignment of "matches[ i ]" from this expression.(é·
+\javascript:S1121ê":Extract the assignment of "elemLang" from this expression.(è—µÙûÿÿÿÿ
+Sjavascript:S1121ñ"6Extract the assignment of "elem" from this expression.(òœÏ¬
+Tjavascript:S1117"2'nodeName' is already declared in the upper scope.(Ë¶¡ûÿÿÿÿ
+gjavascript:S905™"FExpected an assignment or function call and instead saw an expression.(öÇ…Õøÿÿÿÿ
+Hjavascript:S1117Ù"+'i' is already declared in the upper scope.(­¢¤ê
+Mjavascript:S1117á"+'i' is already declared in the upper scope.(ŞŒÖùÿÿÿÿ
+Mjavascript:S1117é"+'i' is already declared in the upper scope.(¾Ùü±øÿÿÿÿ
+fjavascript:S3358ë"DExtract this nested ternary operation into an independent statement.(¬¨Üàøÿÿÿÿ
+Njavascript:S1264î",Replace this "for" loop with a "while" loop.(ÒöÁşøÿÿÿÿ
+Mjavascript:S1117õ"+'i' is already declared in the upper scope.(İ˜¼‹ùÿÿÿÿ
+Ijavascript:S1264ö",Replace this "for" loop with a "while" loop.(ï¾Ü
+Djavascript:S1186‰"'Unexpected empty function 'setFilters'.(»•ÿò
+Ujavascript:S1121£"8Extract the assignment of "tokens" from this expression.(ä‹İñ
+Tjavascript:S1121©"7Extract the assignment of "match" from this expression.(êÕ¸©
+Yjavascript:S1121¶"7Extract the assignment of "match" from this expression.(¦¬Ôüÿÿÿÿ
+ajavascript:S3358Ì"DExtract this nested ternary operation into an independent statement.(ÇÔÊÒ
+Hjavascript:S1117Ô"+'i' is already declared in the upper scope.(Æïşº
+Ojavascript:S1117Ş"-'dir' is already declared in the upper scope.(÷ô›£ÿÿÿÿÿ
+Wjavascript:S1121Š":Extract the assignment of "oldCache" from this expression.(£‘¶ú
+ajavascript:S1121"?Extract the assignment of "newCache[ 2 ]" from this expression.(Ï£’ôÿÿÿÿÿ
+ajavascript:S1121•"?Extract the assignment of "newCache[ 2 ]" from this expression.(ÆÓİˆıÿÿÿÿ
+Mjavascript:S1117£"+'i' is already declared in the upper scope.(ÏÆüÿÿÿÿ
+Hjavascript:S1117¯"+'i' is already declared in the upper scope.(Æïşº
+Mjavascript:S1117º"+'i' is already declared in the upper scope.(ÈÖ§ıÿÿÿÿ
+Xjavascript:S1121¿"6Extract the assignment of "elem" from this expression.(ÛÌñ‡şÿÿÿÿ
+Mjavascript:S1117Ô"+'i' is already declared in the upper scope.(ØÙšèşÿÿÿÿ
+fjavascript:S3358è"DExtract this nested ternary operation into an independent statement.(°ˆÃ¶ıÿÿÿÿ
+fjavascript:S3358è"DExtract this nested ternary operation into an independent statement.(°ˆÃ¶ıÿÿÿÿ
+Xjavascript:S1121ş"6Extract the assignment of "elem" from this expression.(îˆğÿıÿÿÿÿ
+hjavascript:S1121ÿ"KExtract the assignment of "matcherIn[ postMap[ i ] ]" from this expression.(Ÿâ
+Xjavascript:S1121Œ"6Extract the assignment of "elem" from this expression.(¿’Ÿıÿÿÿÿ
+bjavascript:S1121"@Extract the assignment of "matcherIn[ i ]" from this expression.(‰ä’°ıÿÿÿÿ
+Yjavascript:S1121’"<Extract the assignment of "matcherOut" from this expression.(ÜÜÎŸ
+Rjavascript:S1121˜"6Extract the assignment of "elem" from this expression.(È¦ºr
+^javascript:S1121›"AExtract the assignment of "results[ temp ]" from this expression.(èÜŒ¤
+Mjavascript:S1117µ"+'i' is already declared in the upper scope.(Œ«Øÿúÿÿÿÿ
+`javascript:S1121À">Extract the assignment of "checkContext" from this expression.(ëœå­úÿÿÿÿ
+Vjavascript:S1121Ê"9Extract the assignment of "matcher" from this expression.(ë«–·
+@javascript:S2310Ó"Remove this assignment of "i".(­¤Ïşÿÿÿÿ
+Ujavascript:S1121ä"8Extract the assignment of "tokens" from this expression.(Õöîó
+Mjavascript:S1117õ"+'i' is already declared in the upper scope.(•øüúÿÿÿÿ
+hjavascript:S1226—"KIntroduce a new variable or use its initial value before reassigning "xml".(Ãé“„
+Sjavascript:S1121¨"6Extract the assignment of "elem" from this expression.(Íö¾Ï
+Mjavascript:S1117í"+'i' is already declared in the upper scope.(ãÌ²ÿüÿÿÿÿ
+Gjavascript:S1117˜"+'i' is already declared in the upper scope.(Ú§×
+Wjavascript:S1121š":Extract the assignment of "selector" from this expression.(§Ñšï
+Yjavascript:S1121¤"7Extract the assignment of "token" from this expression.(ÚÂ½›üÿÿÿÿ
+Xjavascript:S1121º"6Extract the assignment of "type" from this expression.(òƒÿñøÿÿÿÿ
+Xjavascript:S1121½"6Extract the assignment of "find" from this expression.(ÏàÈŞúÿÿÿÿ
+Xjavascript:S1121À"6Extract the assignment of "seed" from this expression.(Ä«¦¹şÿÿÿÿ
+Qjavascript:S1117û"/'isXML' is already declared in the upper scope.(åÍÏ•ùÿÿÿÿ
+Ljavascript:S1117‰"/'isXML' is already declared in the upper scope.(»Ì’€
+Ljavascript:S1117•"/'isXML' is already declared in the upper scope.(í³ã€
+fjavascript:S3358™"DExtract this nested ternary operation into an independent statement.(ú‹¯…ıÿÿÿÿ
+Wjavascript:S1121™"5Extract the assignment of "val" from this expression.(ú‹¯…ıÿÿÿÿ
+Jjavascript:S1117´"-'dir' is already declared in the upper scope.(ªŞÇ
+Xjavascript:S1121¸"6Extract the assignment of "elem" from this expression.(„ËøÉûÿÿÿÿ
+Kjavascript:S1117ƒ".'elem' is already declared in the upper scope.(ğÄÄ­
+Xjavascript:S6353¿";Use concise character class syntax '.' instead of '[\w\W]'.(çèâŸ
+Ojavascript:S1117†"-'dir' is already declared in the upper scope.(Ñæİ‹ÿÿÿÿÿ
+Rjavascript:S1121‡"5Extract the assignment of "cur" from this expression.(çÛ£ï
+2javascript:S108‡"Empty block statement.(çÛ£ï
+~javascript:S1994§"aThis loop's stop condition tests "queue.length, queue" but the incrementer updates "firingIndex".(âÖæÅ
+Djavascript:S2310©"(Remove this assignment of "firingIndex".(ĞĞ†]
+Jjavascript:S2310°"(Remove this assignment of "firingIndex".(Ä¡–ûıÿÿÿÿ
+Zjavascript:S1121Ñ"8Extract the assignment of "method" from this expression.(³À¿Óüÿÿÿÿ
+Tjavascript:S1121Õ"8Extract the assignment of "method" from this expression.(Ş¶ó>
+Ljavascript:S1117ä"/'value' is already declared in the upper scope.(Òªãà
+Tjavascript:S1117¨"2'deferred' is already declared in the upper scope.(®¹•ıúÿÿÿÿ
+@javascript:S125Ø"Remove this commented out code.(²ğ‘êşÿÿÿÿ
+;javascript:S125ç"Remove this commented out code.(úÙ½
+@javascript:S125ë"Remove this commented out code.(Œá‰­ıÿÿÿÿ
+@javascript:S125÷"Remove this commented out code.(íËô½ÿÿÿÿÿ
+@javascript:S125„"Remove this commented out code.(¼¢“çıÿÿÿÿ
+Mjavascript:S1117¨"+'i' is already declared in the upper scope.(ŞŒ•ßÿÿÿÿÿ
+Ljavascript:S1117Ñ "/'value' is already declared in the upper scope.(¸óª
+Vjavascript:S1135®""4Complete the task associated to this "TODO" comment.(©ÇÈùÿÿÿÿ
+]javascript:S6353²"";Use concise character class syntax '.' instead of '[\w\W]'.(Ñ”“üÿÿÿÿ
+]javascript:S6353²"";Use concise character class syntax '.' instead of '[\w\W]'.(Ñ”“üÿÿÿÿ
+Qjavascript:S1135ò""4Complete the task associated to this "TODO" comment.(£ş«Î
+Ljavascript:S1117¤#"/'value' is already declared in the upper scope.(Ú›ûè
+Kjavascript:S1117¥#".'data' is already declared in the upper scope.(¥äƒâ
+Tjavascript:S1121©%"7Extract the assignment of "scale" from this expression.(“Æ Ü
+Ojavascript:S1117Í%"2'nodeName' is already declared in the upper scope.( ŞÀœ
+Zjavascript:S1121é("8Extract the assignment of "events" from this expression.(Éì’Çúÿÿÿÿ
+Zjavascript:S1121ì("=Extract the assignment of "eventHandle" from this expression.(íò
+\javascript:S1121™)":Extract the assignment of "handlers" from this expression.(ÕØÁ×şÿÿÿÿ
+Ujavascript:S1121Ä)"8Extract the assignment of "events" from this expression.(»ƒ‡
+Vjavascript:S1121¦*"9Extract the assignment of "matched" from this expression.(«œşŸ
+]javascript:S1121ª*";Extract the assignment of "handleObj" from this expression.(×³Ä¬ıÿÿÿÿ
+Qjavascript:S1117í+"4'expectSync' is already declared in the upper scope.(üÅ×
+vjavascript:S5850Ç."TGroup parts of the regex together to make the intended operator precedence explicit.(ì„¹Šÿÿÿÿÿ
+Tjavascript:S1117…/"2'nodeName' is already declared in the upper scope.(Àâ…üÿÿÿÿ
+Sjavascript:S1121¸0"6Extract the assignment of "data" from this expression.(‰£ñÑ
+Ljavascript:S1117Ş0"/'value' is already declared in the upper scope.(Ú›ûè
+Ljavascript:S1117§1"/'value' is already declared in the upper scope.(Ú›ûè
+\javascript:S1121ó3":Extract the assignment of "this.get" from this expression.(Ø “õüÿÿÿÿ
+gjavascript:S1121–4"EExtract the assignment of "vendorProps[ name ]" from this expression.(““Òçüÿÿÿÿ
+Kjavascript:S1117×7".'name' is already declared in the upper scope.(¨ë×¶
+Ljavascript:S1117×7"/'value' is already declared in the upper scope.(¨ë×¶
+Sjavascript:S1121û8"7Extract the assignment of "fxNow" from this expression.(“Ä½M
+Yjavascript:S1121™9"7Extract the assignment of "tween" from this expression.(¤·Òÿÿÿÿÿ
+\javascript:S1515²:"?Make sure this function is not called after the loop completes.(†‡µ±
+Cjavascript:S2310»:"!Remove this assignment of "prop".(©‰¡šıÿÿÿÿ
+Djavascript:S2310æ:""Remove this assignment of "index".(é‰Ü„üÿÿÿÿ
+Kjavascript:S1117‡;"/'index' is already declared in the upper scope.(›ãöq
+Mjavascript:S1117ˆ;"0'length' is already declared in the upper scope.(¥ø‹‘
+Jjavascript:S1117±;"/'index' is already declared in the upper scope.(ã¿
+Mjavascript:S1117µ;"0'length' is already declared in the upper scope.(Ñ™éŒ
+:javascript:S2310ã="Remove this assignment of "i".(¤©‰
+Pjavascript:S1117Ÿ?".'name' is already declared in the upper scope.(£¥µşÿÿÿÿ
+[javascript:S1121Ú?">Extract the assignment of "elem[ name ]" from this expression.(µáÑ®
+gjavascript:S905–@"FExpected an assignment or function call and instead saw an expression.(¦ó³§şÿÿÿÿ
+ajavascript:S905 @"FExpected an assignment or function call and instead saw an expression.(ö„ã!
+gjavascript:S905£@"FExpected an assignment or function call and instead saw an expression.(¦ó³§şÿÿÿÿ
+Hjavascript:S1117Ø@"+'j' is already declared in the upper scope.(ïÑ®Â
+Hjavascript:S1117ı@"+'j' is already declared in the upper scope.(ïÑ®Â
+Ljavascript:S1117­B"/'value' is already declared in the upper scope.(ÿÜÛİ
+cjavascript:S1121„C"AExtract the assignment of "option.selected" from this expression.(Åø¥ûÿÿÿÿ
+`javascript:S1121œC">Extract the assignment of "elem.checked" from this expression.(×ØŸˆüÿÿÿÿ
+Wjavascript:S1121…D"5Extract the assignment of "cur" from this expression.(Ò¸õ™şÿÿÿÿ
+Ojavascript:S1117¦F"-'val' is already declared in the upper scope.(Îã€šıÿÿÿÿ
+djavascript:S1121íF"GExtract the assignment of "structure[ dataType ]" from this expression.(üœËõ
+djavascript:S1121ñF"GExtract the assignment of "structure[ dataType ]" from this expression.(á÷˜ê
+\javascript:S1121ŠG":Extract the assignment of "selected" from this expression.(ø˜è½şÿÿÿÿ
+Ojavascript:S1117½I"3'completed' is already declared in the upper scope.(¯Ğb
+Ijavascript:S1656ÇJ"''urlAnchor.href' is assigned to itself.(—€ÆŞşÿÿÿÿ
+ajavascript:S3358¥K"DExtract this nested ternary operation into an independent statement.(¶¬­Í
+<javascript:S1186L"Unexpected empty function.(‚ÿ©ÿÿÿÿÿ
+Cjavascript:S1186™M"&Unexpected empty method 'text script'.(§“Å³
+\javascript:S1121ÀO":Extract the assignment of "callback" from this expression.(ã„¸Õüÿÿÿÿ
+wjavascript:S4144ËO"ZUpdate this function so that its implementation is not identical to the one on line 10119.(×œŒ™
+Rjavascript:S1117äR"0'method' is already declared in the upper scope.(§ç¨ıÿÿÿÿ
+Ojavascript:S1117äR"-'val' is already declared in the upper scope.(§ç¨ıÿÿÿÿ
+Pjavascript:S1117¢S".'type' is already declared in the upper scope.(ãì¼Úúÿÿÿÿ
+Qjavascript:S1117¢S"/'value' is already declared in the upper scope.(ãì¼Úúÿÿÿÿ
+qjavascript:S5850„T"TGroup parts of the regex together to make the intended operator precedence explicit.(ßôø³

@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block title %}用户信息(ModelForm){% endblock %}
+{% block content %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span> 用户信息(ModelForm)
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered">
+                {# novalidate 是校验#}
+                <form class="form-horizontal" method="post" novalidate>
+                    {% csrf_token %}
+                    {{ user_form }}
+                    <input type="submit" value="提交"/>
+                </form>
+            </table>
+        </div>
+    </div>
+{% endblock %}

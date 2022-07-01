@@ -1,0 +1,67 @@
+
+ajavascript:S905"FExpected an assignment or function call and instead saw an expression.(íñš–
+ajavascript:S905"FExpected an assignment or function call and instead saw an expression.(íñš–
+ajavascript:S905X"FExpected an assignment or function call and instead saw an expression.(íñš–
+Tjavascript:S1121y"3Extract the assignment of "e" from this expression.(ªšŠ»üÿÿÿÿ
+Xjavascript:S1121”"6Extract the assignment of "data" from this expression.(Úşé°ûÿÿÿÿ
+bjavascript:S905¸"FExpected an assignment or function call and instead saw an expression.(íñš–
+Xjavascript:S1121‚"6Extract the assignment of "data" from this expression.(…ƒàËûÿÿÿÿ
+bjavascript:S905¶"FExpected an assignment or function call and instead saw an expression.(íñš–
+[javascript:S1121€">Extract the assignment of "this.$active" from this expression.(¯õâ
+Zjavascript:S1121¨">Extract the assignment of "this.sliding" from this expression.(ı¾º{
+bjavascript:S905À"FExpected an assignment or function call and instead saw an expression.(È«§©
+Xjavascript:S1121å"6Extract the assignment of "data" from this expression.(¸ƒºÎøÿÿÿÿ
+bjavascript:S905®"FExpected an assignment or function call and instead saw an expression.(íñš–
+gjavascript:S905"FExpected an assignment or function call and instead saw an expression.(ÌĞ¼çüÿÿÿÿ
+{javascript:S1172±"YRemove the unused function parameter "i" or rename it to "_i" to make intention explicit.(¿Ë¼ûÿÿÿÿ
+Sjavascript:S1121Ä"6Extract the assignment of "href" from this expression.(¼êËĞ
+Sjavascript:S1121Ô"6Extract the assignment of "data" from this expression.(‹ˆóå
+bjavascript:S905‚"FExpected an assignment or function call and instead saw an expression.(íñš–
+Ujavascript:S1121©"3Extract the assignment of "e" from this expression.(´ÿø‹ûÿÿÿÿ
+Ujavascript:S1121Æ"3Extract the assignment of "e" from this expression.( áÔ³øÿÿÿÿ
+Xjavascript:S1121ÿ"6Extract the assignment of "data" from this expression.(³ı†±ûÿÿÿÿ
+bjavascript:S905¨"FExpected an assignment or function call and instead saw an expression.(íñš–
+Hjavascript:S1117æ"+'e' is already declared in the upper scope.(ŒÜ‘í
+gjavascript:S905ù"FExpected an assignment or function call and instead saw an expression.(¯« ıÿÿÿÿ
+Mjavascript:S1117€"+'e' is already declared in the upper scope.(ò‘‰“øÿÿÿÿ
+qjavascript:S3776Ø"TRefactor this function to reduce its Cognitive Complexity from 26 to the 15 allowed.(‰ËšÙ
+bjavascript:S905î"FExpected an assignment or function call and instead saw an expression.(ÄÜ³‘
+~javascript:S1172²	"aRemove the unused function parameter "index" or rename it to "_index" to make intention explicit.(„„Ë¢
+~javascript:S1172¾	"aRemove the unused function parameter "index" or rename it to "_index" to make intention explicit.(„„Ë¢
+Xjavascript:S1121Ø	"6Extract the assignment of "data" from this expression.(îËÅãúÿÿÿÿ
+bjavascript:S905
+"FExpected an assignment or function call and instead saw an expression.(íñš–
+ƒjavascript:S1172Ü
+"aRemove the unused function parameter "index" or rename it to "_index" to make intention explicit.(†–Ñ„ùÿÿÿÿ
+}javascript:S1172û
+"[Remove the unused function parameter "el" or rename it to "_el" to make intention explicit.(°ØÆûÿÿÿÿ
+Njavascript:S1117û
+",'el' is already declared in the upper scope.(°ØÆûÿÿÿÿ
+Mjavascript:S1117û
+"+'i' is already declared in the upper scope.(°ØÆûÿÿÿÿ
+Njavascript:S1117ˆ",'el' is already declared in the upper scope.(œì¬óÿÿÿÿÿ
+qjavascript:S3776»"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(¯ŸÑô
+\javascript:S1121Ø"?Extract the assignment of "this._options" from this expression.(êĞª
+qjavascript:S3776Ã"TRefactor this function to reduce its Cognitive Complexity from 44 to the 15 allowed.(—‚û•
+ajavascript:S3358ñ"DExtract this nested ternary operation into an independent statement.(ÂÚé¿
+fjavascript:S3358ò"DExtract this nested ternary operation into an independent statement.(÷ê££úÿÿÿÿ
+ajavascript:S3358ó"DExtract this nested ternary operation into an independent statement.(‡º¯
+Qjavascript:S1135ß"4Complete the task associated to this "TODO" comment.(ñ€ù”
+ajavascript:S3358‘"DExtract this nested ternary operation into an independent statement.(æ­¦¡
+fjavascript:S3358š"DExtract this nested ternary operation into an independent statement.(Óî‹Òøÿÿÿÿ
+fjavascript:S3358›"DExtract this nested ternary operation into an independent statement.(ë¡ßÿÿÿÿÿ
+_javascript:S1121Ø"=Extract the assignment of "this.$arrow" from this expression.(•¹¢Úûÿÿÿÿ
+Xjavascript:S1121—"6Extract the assignment of "data" from this expression.(ÈÇÔïüÿÿÿÿ
+bjavascript:S905µ"FExpected an assignment or function call and instead saw an expression.(íñš–
+qjavascript:S3776µ"TRefactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.(íñš–
+_javascript:S1121…"=Extract the assignment of "this.$arrow" from this expression.(ŠıñÉÿÿÿÿÿ
+Xjavascript:S1121“"6Extract the assignment of "data" from this expression.(€ ôæÿÿÿÿÿ
+bjavascript:S905±"FExpected an assignment or function call and instead saw an expression.(íñš–
+Sjavascript:S1121µ"6Extract the assignment of "data" from this expression.(Ò‚ƒ
+bjavascript:S905Ş"FExpected an assignment or function call and instead saw an expression.(íñš–
+gjavascript:S905«"FExpected an assignment or function call and instead saw an expression.(ÀıêŠûÿÿÿÿ
+Sjavascript:S1121Ï"6Extract the assignment of "data" from this expression.(ÖİÙÛ
+bjavascript:S905ú"FExpected an assignment or function call and instead saw an expression.(íñš–
+vjavascript:S3776š"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(ûä¹Øûÿÿÿÿ
+ejavascript:S1121µ"CExtract the assignment of "this.pinnedOffset" from this expression.(Ü–Ìúûÿÿÿÿ
+Xjavascript:S1121ï"6Extract the assignment of "data" from this expression.(µöğûÿÿÿÿ

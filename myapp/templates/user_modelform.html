@@ -1,26 +1,28 @@
 {% extends 'layout.html' %}
-{% block title %}user_list{% endblock %}
+{% block title %}用户信息(ModelForm){% endblock %}
 {% block content %}
-    <a class="btn btn-primary" href="/user_list/add/">
-        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 新增用户
+    <a class="btn btn-primary" href="/modelform_userinfo/add/">
+        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 新增用户(ModelForm)
     </a>
     <div class="panel panel-default">
         <div class="panel-heading">
-            <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span> 用户信息
+            <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span> 用户信息(ModelForm)
         </div>
         <div class="panel-body">
             <table class="table table-bordered">
                 <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>姓名</th>
-                    <th>密码</th>
-                    <th>年龄</th>
-                    <th>账户</th>
-                    <th>性别</th>
-                    <th>部门Id</th>
-                    <th>入职时间</th>
-                    <th>操作</th>
+                    {% for field in UserModelForm %}
+                        <th>ID</th>
+                        <th>姓名</th>
+                        <th>密码</th>
+                        <th>年龄</th>
+                        <th>账户</th>
+                        <th>性别</th>
+                        <th>部门Id</th>
+                        <th>入职时间</th>
+                        <th>操作</th>
+                    {% endfor %}
                 </tr>
                 </thead>
                 <tbody>
@@ -35,8 +37,8 @@
                         <td>{{ item.department.title }}</td>
                         <td>{{ item.create_time|date:"Y-m-d H:i:s" }}</td>
                         <td>
-                            <a class="btn btn-primary" href="/department_list/{{ item.id }}/edit/">编辑</a>
-                            <a class="btn btn-danger" href="/department_list/delete?nid={{ item.id }}">删除</a>
+                            <a class="btn btn-primary" href="/modelform_userinfo/{{ item.id }}/edit/">编辑</a>
+                            <a class="btn btn-danger" href="/modelform_userinfo/delete?nid={{ item.id }}">删除</a>
                         </td>
                     </tr>
                 {% endfor %}
