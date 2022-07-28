@@ -4,6 +4,7 @@
     @Data : 2022/7/1 21:45
     @File : ModelFormUser.py
 """
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 
 from myapp.models import UserInfo
@@ -11,10 +12,24 @@ from myapp.utils.form import UserModelForm
 
 
 def User_molelform(request):
-    UserInfo_list = UserInfo.objects.all().order_by('id')
     # 获取请求的参数
-    # user_form=UserModelForm(instance=UserInfo_list)
-    return render(request, "user_modelform.html", {'UserInfo_list': UserInfo_list})
+    q = request.GET.get('q')
+    if q != 'None' and q is not None:
+        dict_data = {}
+        the_value = request.GET.get('q').encode('utf-8').decode('utf-8')
+        if the_value:
+            dict_data['name__contains'] = the_value
+        queryset = UserInfo.objects.filter(**dict_data)
+        # UserInfo_list = UserInfo.objects.all().order_by('id')
+        # 获取请求的参数
+        # user_form=UserModelForm(instance=UserInfo_list)
+        # return render(request, "user_modelform.html", {'UserInfo_list': queryset})
+    else:
+        queryset = UserInfo.objects.all().order_by('id')
+    paginator = Paginator(queryset, 3)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, "user_modelform.html", {'page_obj': page_obj, 'q': q})
 
 
 def ModelUser_add(request):
@@ -37,7 +52,7 @@ def del_user(request):
     return redirect("/modelform_userinfo/")
 
 
-def edit_user(request,nid):
+def edit_user(request, nid):
     if request.method == 'GET':
         # 获取请求的参数
         data_list = UserInfo.objects.filter(id=nid).first()

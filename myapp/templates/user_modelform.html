@@ -1,32 +1,55 @@
 {% extends 'layout.html' %}
+{% block style %}
+    <style>
+        div[class*=my-page] {
+            text-align: center
+        }
+
+        div[class*=my-table]::after {
+
+        }
+    </style>
+{% endblock %}
 {% block title %}用户信息(ModelForm){% endblock %}
+{% block js %}
+{% endblock %}
 {% block content %}
-    <a class="btn btn-primary" href="/modelform_userinfo/add/">
-        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 新增用户(ModelForm)
-    </a>
+    <div style="margin-bottom: 10px" class="clearfix">
+        <a class="btn btn-primary" href="/modelform_userinfo/add/">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 新增用户(ModelForm)
+        </a>
+        <div style="float: right; width:300px">
+            <form>
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="Search for..."/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">搜索(按名字)</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="panel panel-default">
         <div class="panel-heading">
             <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span> 用户信息(ModelForm)
         </div>
-        <div class="panel-body">
+        <div class="panel-body my-table">
             <table class="table table-bordered">
                 <thead>
                 <tr>
-                    {% for field in UserModelForm %}
-                        <th>ID</th>
-                        <th>姓名</th>
-                        <th>密码</th>
-                        <th>年龄</th>
-                        <th>账户</th>
-                        <th>性别</th>
-                        <th>部门Id</th>
-                        <th>入职时间</th>
-                        <th>操作</th>
-                    {% endfor %}
+                    <th>ID</th>
+                    <th>姓名</th>
+                    <th>密码</th>
+                    <th>年龄</th>
+                    <th>账户</th>
+                    <th>性别</th>
+                    <th>部门Id</th>
+                    <th>入职时间</th>
+                    <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
-                {% for item in UserInfo_list %}
+                {% for item in page_obj %}
                     <tr>
                         <td>{{ item.id }}</td>
                         <td>{{ item.name }}</td>
@@ -44,6 +67,37 @@
                 {% endfor %}
                 </tbody>
             </table>
+            <div class="panel panel-primary my-page">
+                <div class="pagination">
+                     <span class="step-links">
+                            &nbsp;
+                         {% if page_obj.has_previous %}
+                             <a class="btn btn-primary" href="?q={{ q }}&page=1"> 首页</a>
+                             <a class="btn btn-primary"
+                                href="?q={{ q }}&page={{ page_obj.previous_page_number }}">前一页</a>
+                         {% endif %}
+
+                         <span class="current">
+                             <span class="btn btn-info"> 当前第{{ page_obj.number }}页 </span>
+                             <span class="btn btn-info"> 共{{ page_obj.paginator.num_pages }}页 </span>{#                              &nbsp;  Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} &nbsp;#}
+                         </span>
+
+                         {% if page_obj.has_next %}
+                             <a class="btn btn-primary"
+                                href="?q={{ q }}&page={{ page_obj.next_page_number }}">下一页</a>
+                             <a class="btn btn-primary" href="?q={{ q }}&page={{ page_obj.paginator.num_pages }}">尾页 &raquo;</a>
+                         {% endif %}
+                         <span>
+                              <form style="margin-top:10px">
+                                 <input type="hidden" name="q" value="{{ q }}">
+                                 第 <input name="page" style="width:50px" type="text"/> 页
+                                 <button type="submit" class="btn btn-primary">跳转</button>
+                             </form>
+                         </span>
+
+                        </span>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

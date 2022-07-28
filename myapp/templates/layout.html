@@ -6,25 +6,21 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap-theme.css' %}" type="text/css"/>
     {% block css %}{% endblock %}
+    {% block style %}
+    {% endblock %}
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+<script type="text/javascript" src="{% static 'js/jquery/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.js' %}"></script>
 {% block js %}{% endblock %}
-<script src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.js' %}"></script>
-<script src="{% static 'js/jquery/jquery.js' %}"></script>
 <nav class="navbar navbar-default">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+        <div class="nav navbar-header">
             <a class="navbar-brand" href="/modelform_userinfo/">Brand</a>
         </div>
 
@@ -33,6 +29,26 @@
             <ul class="nav navbar-nav">
                 <li><a href="/user_list/">用户管理</a></li>
                 <li><a href="/department_list/">部门管理</a></li>
+                <li><a href="/admin_list/">管理员</a></li>
+                <li><a href="/tasks/">任务管理</a></li>
+                <li><a href="/orders/lists/">订单管理</a></li>
+                <li><a href="/echarts/lists/">数据统计</a></li>
+                <li><a href="/upload/files/">文件管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/login/">登录</a></li>
+                <li><a href="/logout/">注销</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

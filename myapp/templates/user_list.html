@@ -35,8 +35,8 @@
                         <td>{{ item.department.title }}</td>
                         <td>{{ item.create_time|date:"Y-m-d H:i:s" }}</td>
                         <td>
-                            <a class="btn btn-primary" href="/department_list/{{ item.id }}/edit/">编辑</a>
-                            <a class="btn btn-danger" href="/department_list/delete?nid={{ item.id }}">删除</a>
+                            <a class="btn btn-primary" href="/modelform_userinfo/{{ item.id }}/edit/">编辑</a>
+                            <a class="btn btn-danger" href="/modelform_userinfo/delete?nid={{ item.id }}">删除</a>
                         </td>
                     </tr>
                 {% endfor %}

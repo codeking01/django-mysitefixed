@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block title %} 用户登录 {% endblock %}
+{% block content %}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="table table-bordered">
+                {# novalidate 是校验#}
+                <div class="form-group1">
+                    <form class="form-horizontal" method="post" novalidate>
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <img src="image/code/" alt="验证码" style="width: 125px">
+                        <div style="text-align: center">
+                            <input type="submit" value="登录"/>
+                        </div>
+                    </form>
+                </div>
+            </table>
+        </div>
+    </div>
+{% endblock %}

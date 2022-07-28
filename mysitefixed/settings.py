@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'myapp.middleware.auth.AuthMiddleware',
 ]
 
 ROOT_URLCONF = 'mysitefixed.urls'
@@ -85,7 +86,7 @@ WSGI_APPLICATION = 'mysitefixed.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'staff_management_db',
+        'NAME': 'staff_db',
         'USER': 'root',
         'PASSWORD': '123456',
         'HOST': 'localhost',
@@ -134,3 +135,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 开启midia文件，使得上传的文件聚集
+import os
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = "/media/"

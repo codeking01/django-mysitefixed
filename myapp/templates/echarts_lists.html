@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %} 数据统计 {% endblock %}
+{% block content %}
+    <div class="panel panel-default" style="width: 600px;height:500px;">
+        <div class="panel-heading">
+            <h3 class="panel-title">柱状图</h3>
+        </div>
+        <br>
+        <div id="m1" style="width: 600px;height:400px;">
+            柱状图
+        </div>
+
+
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/echarts.js' %}"></script>
+    <script type="text/javascript">
+        $(function () {
+            initBar();
+        })
+
+        function initBar() {
+            $(document).ready(function () {
+                // 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('m1'));
+                // 指定图表的配置项和数据
+                var option = {
+                    title: {
+                        text: 'ECharts 入门示例',
+                        textAlign: 'auto',
+                        left: "center",
+                    },
+                    tooltip: {},
+                    legend: {
+                        data: [],
+                        bottom: 2,
+                    },
+                    xAxis: {
+                        data: []
+                    },
+                    yAxis: {},
+                    series: []
+                };
+
+                {# 去后台获取数据 #}
+                $.ajax({
+                    url: '/echarts/get_data/',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        option.legend.data = data.legend;
+                        option.xAxis.data = data.xAxis;
+                        option.series = data.series;
+                        // 使用刚指定的配置项和数据显示图表。
+                        myChart.setOption(option);
+                    }
+                });
+            });
+        }
+    </script>
+{% endblock %}

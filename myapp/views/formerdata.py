@@ -34,3 +34,4 @@ def news(request):
     # 获取请求的参数
     print(request.GET)
     return render(request, "news.html", {'res': res})
+

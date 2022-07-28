@@ -8,11 +8,15 @@
         <div class="panel-body">
             <table class="table table-bordered">
                 {# novalidate 是校验#}
-                <form class="form-horizontal" method="post" novalidate>
-                    {% csrf_token %}
-                    {{ user_form }}
-                    <input type="submit" value="提交"/>
-                </form>
+                <div>
+                    <form class="form-horizontal" method="post" novalidate>
+                        {% csrf_token %}
+                        {{ user_form }}  <input type="submit" value="提交"/>
+                        <div style="text-align: center">
+
+                        </div>
+                    </form>
+                </div>
             </table>
         </div>
     </div>

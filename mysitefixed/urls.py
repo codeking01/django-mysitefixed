@@ -14,12 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 # from django.contrib import admin
-from django.urls import path
+from django.conf import settings
+from django.urls import path, re_path
+from django.views.static import serve
 
-from myapp.views import formerdata, department, User, ModelFormUser
+from myapp.views import formerdata, department, User, ModelFormUser, AdminUser, Echarts, Upload
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}, name='media'),
 
     # 配置路由
     path('index/', formerdata.index),
@@ -28,6 +31,7 @@ urlpatterns = [
     path('news/', formerdata.news),
 
     # 根据数据库的操作info页面
+
     path('department_list/', department.department_list),
     # info的添加
     path('department_list/add/', department.add_department),
@@ -48,4 +52,35 @@ urlpatterns = [
     path('modelform_userinfo/delete/', ModelFormUser.del_user),
     # 修改用户
     path('modelform_userinfo/<int:nid>/edit/', ModelFormUser.edit_user),
+
+    # 管理员模块
+    path('admin_list/', AdminUser.admin_list),
+    path('admin_list/add/', AdminUser.add_admin),
+    path('admin_list/<int:nid>/edit/', AdminUser.edit_admin),
+    path('admin_list/delete/', AdminUser.del_admin),
+
+    # 登录模块
+    path('login/', User.login),
+    # 注销模块
+    path('logout/', User.logout),
+    # 验证码
+    path('login/image/code/', User.get_code),
+
+    # 任务管理
+    path('tasks/', User.task),
+    path('tasks/ajax/', User.task_ajax),
+    path('tasks/add/', User.task_add),
+
+    # 订单管理
+    path('orders/lists/', User.order),
+    path('order/add/', User.order_add),
+    path('order/delete/', User.order_delete),
+    path('order/edit/', User.order_eidt),
+
+    # echarts 使用
+    path('echarts/lists/', Echarts.echarts_lists),
+    path('echarts/get_data/', Echarts.echarts_getdata),
+
+    # 文件管理
+    path('upload/files/', Upload.files),
 ]

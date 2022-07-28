@@ -10,10 +10,28 @@
                 {# novalidate 是校验#}
                 <form class="form-horizontal" method="post" novalidate>
                     {% csrf_token %}
-                    {{ user_form }}
-                    <input type="submit" value="提交"/>
+                    <div id="my-form">
+                        <form id="formEdit">
+                            {{ user_form }}
+                        </form>
+                        <button type="submit" class="btn btn-primary" value="提交">提交</button>
+                    </div>
+
                 </form>
             </table>
         </div>
     </div>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        $(function () {
+            bindAddClassEvent();
+        });
+
+        function bindAddClassEvent() {
+            {# 给form表单添加样式 #}
+            $('#formEdit').find('*').addClass('table table-hover');
+        }
+    </script>
 {% endblock %}
